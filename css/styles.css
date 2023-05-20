@@ -410,6 +410,13 @@ body {
   border-radius: 4px;
   background-color: var(--bgcolor-dark);
   padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+input::placeholder {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 .submit-btn {
   width: 200px;
@@ -450,10 +457,9 @@ input:focus-within + svg {
 }
 .user-data {
   display: flex;
-  align-items: center;
+  position: relative;
 }
 .form-field {
-  position: relative;
   display: inline-flex;
   width: 448px;
   height: 40px;
@@ -468,7 +474,8 @@ input:focus-within + svg {
 .label-icon {
   position: absolute;
   fill: var(--color-text-primary);
-  margin-left: 15px;
+  margin-left: 12px;
+  margin-top: 14px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
